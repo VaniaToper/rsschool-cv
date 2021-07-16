@@ -1,1 +1,1 @@
-https://github.com/VaniaToper/rsschool-cv.git
+https://vaniatoper.github.io/rsschool-cv/cv
