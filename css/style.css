@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+a {
+  color: black;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+* {
+  font-family: Lato;
+}
+
+body {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-height: 100vh;
+}
+body header {
+  background: #afcfea;
+  padding: 35px 50px 100px 50px;
+  width: 100%;
+}
+body header .header__text {
+  border-bottom: solid 3px #f2f8fd;
+  font-size: 150px;
+  color: #f2f8fd;
+}
+body main {
+  -webkit-box-shadow: -2px -2px 5px 2px #4e4e4e;
+          box-shadow: -2px -2px 5px 2px #4e4e4e;
+  top: 190px;
+  position: absolute;
+  margin: 50px 0px 0px 150px;
+  background: #d7e1e9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body main .info {
+  line-height: 60px;
+  margin: 75px;
+  font-size: 30px;
+  width: 60%;
+}
+body main .info li::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: #afcfea;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 20px;
+}
+body main figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+}
+body main figure img {
+  width: 450px;
+}
+body main figure figcaption {
+  font-size: 40px;
+  text-align: center;
+}
+body footer {
+  z-index: 1;
+  margin-top: auto;
+  background: #afcfea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body footer img {
+  margin: 25px 0;
+  width: 150px;
+}
+body footer .link {
+  color: white;
+  width: 700px;
+  font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body footer .link a {
+  color: white;
+}
+body footer .link a:hover {
+  color: #dfdfdf;
+}
+body footer .link a:active {
+  color: #aaaaaa;
+}
