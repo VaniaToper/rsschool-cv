@@ -1,1 +1,1 @@
-https://vaniatoper.github.io/rsschool-cv/cv
+https://vaniatoper.github.io/rsschool-cv/index
