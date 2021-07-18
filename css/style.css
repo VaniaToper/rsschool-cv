@@ -88,7 +88,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,7 +95,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-height: 100vh;
+  min-height: 100vh;
 }
 body header {
   background: #afcfea;
@@ -104,6 +103,7 @@ body header {
   width: 100%;
 }
 body header .header__text {
+  display: inline;
   border-bottom: solid 3px #f2f8fd;
   font-size: 150px;
   color: #f2f8fd;
@@ -111,9 +111,7 @@ body header .header__text {
 body main {
   -webkit-box-shadow: -2px -2px 5px 2px #4e4e4e;
           box-shadow: -2px -2px 5px 2px #4e4e4e;
-  top: 190px;
-  position: absolute;
-  margin: 50px 0px 0px 150px;
+  margin: -50px 0px 0px 150px;
   background: #d7e1e9;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -193,4 +191,7 @@ body footer .link a:hover {
 }
 body footer .link a:active {
   color: #aaaaaa;
+}
+body footer .link h2 {
+  display: inline;
 }

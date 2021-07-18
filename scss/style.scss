@@ -4,15 +4,15 @@
   font-family: Lato;
 }
 body {
-  overflow: hidden;
   display: flex;
   flex-direction: column;
-  max-height: 100vh;
+  min-height: 100vh;
   header {
     background: #afcfea;
     padding: 35px 50px 100px 50px;
     width: 100%;
     .header__text {
+      display: inline;
       border-bottom: solid 3px #f2f8fd;
       font-size: 150px;
       color: #f2f8fd;
@@ -21,9 +21,7 @@ body {
 
   main {
     box-shadow: -2px -2px 5px 2px rgb(78, 78, 78);
-    top: 190px;
-    position: absolute;
-    margin: 50px 0px 0px 150px;
+    margin: -50px 0px 0px 150px;
     background: #d7e1e9;
     display: flex;
     justify-content: space-between;
@@ -82,6 +80,9 @@ body {
         &:active{
           color: rgb(170, 170, 170);
         }
+      }
+      h2 {
+        display: inline;
       }
     }
   }
