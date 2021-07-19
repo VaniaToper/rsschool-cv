@@ -1,0 +1,135 @@
+@import "nullstyle.scss";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  font-family: Lato;
+}
+body {
+  min-height: 100vh;
+  header {
+    padding: 35px 50px 100px 50px;
+    background: #afcfea;
+    box-shadow: 0 -1px 5px 2px #4e4e4e;
+    .header__text {
+      display: inline;
+      font-size: 150px;
+      color: #f2f8fd;
+      border-bottom: solid 3px #f2f8fd;
+    }
+  }
+
+  main {
+    display: flex;
+    justify-content: space-between;
+    margin: -50px 0px 0px 150px;
+    background: #d7e1e9;
+    box-shadow: -1px -1px 5px 2px #4e4e4e;
+    .info {
+      width: 60%;
+      margin: 75px;
+      line-height: 60px;
+      font-size: 30px;
+      & li::before {
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-right: 20px;
+        background: #afcfea;
+        border-radius: 50%;
+      }
+    }
+    figure {
+      display: flex;
+      align-self: center;
+      flex-direction: column;
+      margin: 0 auto;
+      width: 25%;
+      img {
+        width: 100%;
+      }
+      figcaption {
+        font-size: 40px;
+        text-align: center;
+      }
+    }
+  }
+
+  footer {
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #afcfea;
+    box-shadow: 0 1px 5px 2px #4e4e4e;
+    img {
+      margin: 25px 0;
+      width: 150px;
+    }
+    .link {
+      display: flex;
+      justify-content: space-between;
+      width: 700px;
+      font-size: 25px;
+      color: white;
+      a {
+        color: white;
+        &:hover {
+          color: #dfdfdf;
+        }
+        &:active {
+          color: #aaaaaa;
+        }
+      }
+      h2 {
+        display: inline;
+      }
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  body {
+    main {
+      margin: 0;
+      box-shadow: 0 0 5px 2px #4e4e4e;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  body {
+    main {
+      display: flex;
+      flex-direction: column;
+      .info {
+        width: 80%;
+      }
+      figure {
+        margin-bottom: 50px;
+        figcaption {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  body {
+    header {
+      padding-bottom: 50px;
+      .header__text {
+        margin-bottom: 50px;
+        font-size: 120px;
+      }
+    }
+    footer {
+      .link {
+        width: 70%;
+      }
+      img {
+        width: 100px;
+      }
+    }
+  }
+}
