@@ -1,0 +1,26 @@
+$blue: #00649c;
+$darkWhite: #f7f7f7;
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap");
+@import "nullstyle.scss";
+@import "../js/header/header.scss";
+@import "welcome/welcome.scss";
+@import "information/information.scss";
+@import "../js/skills/skills.scss";
+@import "../js/projects/projects.scss";
+@import "footer/footer.scss";
+body {
+  background: $darkWhite;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .body {
+    width: 1920px;
+  }
+}
