@@ -1,0 +1,40 @@
+.footer {
+  padding: 25px 0;
+  width: 100%;
+  background: $blue;
+  @include center;
+  &__body {
+    width: 45%;
+  }
+  &__title {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 48px;
+    color: #ffffff;
+  }
+  &__nav {
+  }
+  &__link {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 33px;
+    color: #ffffff;
+  }
+  &__info {
+  }
+  time{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 33px;
+    color: #ffffff;
+  }
+  &__course-logo {
+    background-size: 10px 50px;
+  }
+  &__contacts {
+    &__item{
+      background: url('../assets/footer/discord.png') center left no-repeat;
+      background-size: 50px 50px;
+    }
+  }
+}

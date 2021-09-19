@@ -1,4 +1,5 @@
 $blue: #00649c;
+$shadowBlue: 0px 4px 4px rgba(0, 100, 156, 0.3);
 $darkWhite: #f7f7f7;
 @mixin center {
   display: flex;
@@ -14,13 +15,39 @@ $darkWhite: #f7f7f7;
 @import "../js/projects/projects.scss";
 @import "footer/footer.scss";
 body {
+  overflow-x: hidden;
   background: $darkWhite;
+  font-family: Poppins;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  .body {
-    width: 1920px;
+  section {
+    width: 80%;
+    margin-bottom: 300px;
+  }
+  h2 {
+    margin-bottom: 70px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 105px;
+  }
+  h3 {
+    display: inline;
+    font-weight: 500;
+    font-size: 45px;
+    cursor: pointer;
+    transition: color 0.2s;
+    &:hover {
+      font-weight: bold;
+      color: $blue;
+    }
   }
 }

@@ -9,30 +9,118 @@
     <header class="header">
       <nav>
         <ul class="header__nav">
-          <li><a class="header__link" href="welcome">Welcome</a></li>
-          <li><a class="header__link" href="information">Information</a></li>
-          <li><a class="header__link" href="skills">Skills</a></li>
-          <li><a class="header__link" href="projects">Projects</a></li>
+          <li><a class="header__link" href="#welcome">Welcome</a></li>
+          <li><a class="header__link" href="#information">Information</a></li>
+          <li><a class="header__link" href="#skills">Skills</a></li>
+          <li><a class="header__link" href="#projects">Projects</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="welcome body" id="welcome">
-        <div class="welcome__content">
-          <div class="welcome__text">
-            <h1 class="welcome__title">Vania<br />Hodynchuk</h1>
-            <span class="welcome__subtitle">Front-End developer</span>
+      <section class="welcome" id="welcome">
+        <div class="welcome__body">
+          <div class="welcome__content">
+            <div class="welcome__text">
+              <h1 class="welcome__title">Vania<br />Hodynchuk</h1>
+              <span class="welcome__subtitle">Front-End developer</span>
+            </div>
+            <a href="#footer"><button class="welcome__button">Connect with me</button></a>
           </div>
-          <button class="welcome__button">Connect with me</button>
         </div>
       </section>
-      <section class="information body" id="information">
-        
+      <section class="information" id="information">
+        <div class="information__body">
+          <h2 class="information__title">About me</h2>
+          <div class="information__content">
+            <div class="information__quotes">span</div>
+            <div class="information__text">
+              I’m beginner in IT sphere, but I have experience with coding on
+              SCSS and HTML. Month ago I started with JavaScript, then I want to
+              continue with React, learning new information doesn’t make me any
+              problems, when it’s interesting. I have some projects, mainly it’s some webs, coding on HTML and SCSS through Prepros. And I’ve passed a lot exercise on Codewars with Python.
+              I’ve passed course RS School JS / FRONT-END, studying in medium school on programmer.
+              English - B1, I have a lot of friends, who I speak English with.
+            </div>
+            <div class="information__quotes">/span</div>
+          </div>
+        </div>
       </section>
-      <section></section>
-      <section></section>
+      <section class="skills" id="skills">
+        <div class="skills__body">
+          <h2 class="skills__title">Skills</h2>
+          <div class="skills__content">
+            <ul class="skills__list">
+              <li><h3 class="skills__js">JavaScript</h3></li>
+              <li><h3 class="skills__html">HTML</h3></li>
+              <li><h3 class="skills__css">CSS</h3></li>
+              <li><h3 class="skills__scss">SCSS</h3></li>
+              <li><h3 class="skills__git">Git</h3></li>
+            </ul>
+            <div class="skills__example example">
+              <div class="example__bar"></div>
+              <div class="example__code">
+                <pre class="bro" >
+  const progressUpdate = () => {
+    const { currentTime, duration } = video;
+    const x = (currentTime / duration) * 100;
+    videoProgress.style.background = getColor(x);
+    if (!videoMousedown) {
+      videoProgress.value = x;
+    }
+  };</pre>
+              </div>
+            </div>
+          </div>
+          <img src="" alt="error" class="skills__icon" />
+        </div>
+      </section>
+      <section class="pojects" id="projects">
+        <div class="projects__body">
+          <h2 class="projects__title">Projects</h2>
+          <ul class="projects__list">
+            <li><h3 class="projects__museum">Museum</h3></li>
+            <li><h3 class="projects__video-player">Video player</h3></li>
+            <li><h3 class="projects__vertical-slider">Vertical slider</h3></li>
+            <li><h3 class="projects__indicius">Indicius</h3></li>
+          </ul>
+          <div>
+            <a
+              class="project__link"
+              target="_blank"
+              href="https://rolling-scopes-school.github.io/vaniatoper-JSFEPRESCHOOL/custom-video-player/index"
+            >
+            <div class="projects__image" style="background: url(assets/projects/vertical-slider.png)center center no-repeat;">
+
+            </div>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="footer" id="footer">
+      <div class="footer__body">
+        <div class="footer__title">Connect with me</div>
+        <nav>
+          <ul class="footer__nav">
+            <li><a class="footer__link" href="#welcome">Welcome</a></li>
+            <li><a class="footer__link" href="#information">Information</a></li>
+            <li><a class="footer__link" href="#skills">Skills</a></li>
+            <li><a class="footer__link" href="#projects">Projects</a></li>
+          </ul>
+        </nav>
+        <div class="footer__info">
+          <div class="footer__info__course">
+            <a href="https://rs.school/js/" class="footer__course-logo" style="background: url(assets/footer/rs_school_js.svg) no-repeat;"></a>
+            <time>2021</time>
+          </div>
+          <ul class="footer__contacts">
+            <li class="footer__contacts__items" style="background: url(assets/projects/vertical-slider.png);"></li>
+            <li class="footer__contacts__items" style="background: url(assets/footer/discord.png);"></li>
+            <li class="footer__contacts__items" style="background: url(assets/footer/gmail.png);"></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
     <script type="module" src="js/header/header.js"></script>
     <script type="module" src="js/projects/projects.js"></script>
     <script type="module" src="js/skills/skills.js"></script>
