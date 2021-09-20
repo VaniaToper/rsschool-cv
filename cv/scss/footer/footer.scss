@@ -12,7 +12,16 @@
     font-size: 48px;
     color: #ffffff;
   }
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav {
+    width: 65%;
+  }
   &__nav {
+    width: 100%;
   }
   &__link {
     font-weight: bold;
@@ -21,20 +30,55 @@
     color: #ffffff;
   }
   &__info {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
-  time{
+  &__info__course {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  time {
     font-weight: bold;
     font-size: 22px;
     line-height: 33px;
     color: #ffffff;
   }
-  &__course-logo {
-    background-size: 10px 50px;
+  &__icon {
+    width: 50px;
+    height: 50px;
+    transition: 0.2s;
+    &:hover {
+      opacity: 0.95;
+    }
+    &:active {
+      opacity: 0.85;
+    }
+  }
+  .rsschool {
+    width: 100px;
+    height: 50px;
+    background: url("../assets/footer/rsschool.svg") no-repeat;
+    background-size: 100px;
+  }
+  .gmail {
+    background: url("../assets/footer/gmail.png") no-repeat;
+    background-size: 50px;
+  }
+  .discord {
+    background: url("../assets/footer/discord.png") no-repeat;
+    background-size: 50px;
+  }
+  .github {
+    background: url("../assets/footer/github.png") no-repeat;
+    background-size: 50px;
   }
   &__contacts {
-    &__item{
-      background: url('../assets/footer/discord.png') center left no-repeat;
-      background-size: 50px 50px;
-    }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }

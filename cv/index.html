@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <title>CV</title>
     <link rel="stylesheet" href="css/main.css" />
-  </head>
+    <link rel="stylesheet"
+    href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">  </head>
   <body>
     <header class="header">
       <nav>
@@ -24,7 +25,9 @@
               <h1 class="welcome__title">Vania<br />Hodynchuk</h1>
               <span class="welcome__subtitle">Front-End developer</span>
             </div>
-            <a href="#footer"><button class="welcome__button">Connect with me</button></a>
+            <a href="#footer"
+              ><button class="welcome__button">Connect with me</button></a
+            >
           </div>
         </div>
       </section>
@@ -32,16 +35,18 @@
         <div class="information__body">
           <h2 class="information__title">About me</h2>
           <div class="information__content">
-            <div class="information__quotes">span</div>
+            <div class="information__quotes">&lt;span&gt;</div>
             <div class="information__text">
               I’m beginner in IT sphere, but I have experience with coding on
               SCSS and HTML. Month ago I started with JavaScript, then I want to
               continue with React, learning new information doesn’t make me any
-              problems, when it’s interesting. I have some projects, mainly it’s some webs, coding on HTML and SCSS through Prepros. And I’ve passed a lot exercise on Codewars with Python.
-              I’ve passed course RS School JS / FRONT-END, studying in medium school on programmer.
+              problems, when it’s interesting. I have some projects, mainly it’s
+              some webs, coding on HTML and SCSS through Prepros. And I’ve
+              passed a lot exercise on Codewars with Python. I’ve passed course
+              RS School JS / FRONT-END, studying in medium school on programmer.
               English - B1, I have a lot of friends, who I speak English with.
             </div>
-            <div class="information__quotes">/span</div>
+            <div class="information__quotes">&lt;/span&gt;</div>
           </div>
         </div>
       </section>
@@ -58,17 +63,14 @@
             </ul>
             <div class="skills__example example">
               <div class="example__bar"></div>
-              <div class="example__code">
-                <pre class="bro" >
-  const progressUpdate = () => {
-    const { currentTime, duration } = video;
-    const x = (currentTime / duration) * 100;
-    videoProgress.style.background = getColor(x);
-    if (!videoMousedown) {
-      videoProgress.value = x;
-    }
-  };</pre>
-              </div>
+              <pre><code class="example__code">const progressUpdate = () => {
+  const { currentTime, duration } = video;
+  const x = (currentTime / duration) * 100;
+  videoProgress.style.background = getColor(x);
+  if (!videoMousedown) {
+    videoProgress.value = x;
+  }
+};</code></pre>
             </div>
           </div>
           <img src="" alt="error" class="skills__icon" />
@@ -89,9 +91,13 @@
               target="_blank"
               href="https://rolling-scopes-school.github.io/vaniatoper-JSFEPRESCHOOL/custom-video-player/index"
             >
-            <div class="projects__image" style="background: url(assets/projects/vertical-slider.png)center center no-repeat;">
-
-            </div>
+              <div
+                class="projects__image"
+                style="
+                  background: url(assets/projects/vertical-slider.png) center
+                    center no-repeat;
+                "
+              ></div>
             </a>
           </div>
         </div>
@@ -100,27 +106,33 @@
     <footer class="footer" id="footer">
       <div class="footer__body">
         <div class="footer__title">Connect with me</div>
-        <nav>
-          <ul class="footer__nav">
-            <li><a class="footer__link" href="#welcome">Welcome</a></li>
-            <li><a class="footer__link" href="#information">Information</a></li>
-            <li><a class="footer__link" href="#skills">Skills</a></li>
-            <li><a class="footer__link" href="#projects">Projects</a></li>
-          </ul>
-        </nav>
-        <div class="footer__info">
-          <div class="footer__info__course">
-            <a href="https://rs.school/js/" class="footer__course-logo" style="background: url(assets/footer/rs_school_js.svg) no-repeat;"></a>
-            <time>2021</time>
+        <div class="footer__content">
+          <nav>
+            <ul class="footer__nav">
+              <li><a class="footer__link" href="#welcome">Welcome</a></li>
+              <li><a class="footer__link" href="#information">Information</a></li>
+              <li><a class="footer__link" href="#skills">Skills</a></li>
+              <li><a class="footer__link" href="#projects">Projects</a></li>
+            </ul>
+          </nav>
+          <div class="footer__info">
+            <div class="footer__info__course">
+              <time>2021</time>
+              <a target="_blank" href="https://rs.school/js/">
+                <div class="footer__icon rsschool"></div>
+              </a>
+            </div>
+            <ul class="footer__contacts">
+              <a target="_blank" href="https://github.com/VaniaToper"><li class="footer__icon github"></li></a>
+              <a target="_blank" href=""><li class="footer__icon discord"></li></a>
+              <a target="_blank" href=""><li class="footer__icon gmail"></li></a>
+            </ul>
           </div>
-          <ul class="footer__contacts">
-            <li class="footer__contacts__items" style="background: url(assets/projects/vertical-slider.png);"></li>
-            <li class="footer__contacts__items" style="background: url(assets/footer/discord.png);"></li>
-            <li class="footer__contacts__items" style="background: url(assets/footer/gmail.png);"></li>
-          </ul>
+          </div>
         </div>
       </div>
     </footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>    <script>hljs.initHighlightingOnLoad();</script>
     <script type="module" src="js/header/header.js"></script>
     <script type="module" src="js/projects/projects.js"></script>
     <script type="module" src="js/skills/skills.js"></script>
