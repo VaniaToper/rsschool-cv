@@ -9,6 +9,7 @@
   <body>
     <header class="header">
       <nav>
+        <div class="header__burger"></div>
         <ul class="header__nav">
           <li><a class="header__link" href="#welcome">Welcome</a></li>
           <li><a class="header__link" href="#information">Information</a></li>
@@ -25,9 +26,7 @@
               <h1 class="welcome__title">Vania<br />Hodynchuk</h1>
               <span class="welcome__subtitle">Front-End developer</span>
             </div>
-            <a href="#footer"
-              ><button class="welcome__button">Connect with me</button></a
-            >
+            <a href="#footer" class="welcome__button">Connect with me</a>
           </div>
         </div>
       </section>
@@ -63,17 +62,10 @@
             </ul>
             <div class="skills__example example">
               <div class="example__bar"></div>
-              <pre><code class="example__code">const progressUpdate = () => {
-  const { currentTime, duration } = video;
-  const x = (currentTime / duration) * 100;
-  videoProgress.style.background = getColor(x);
-  if (!videoMousedown) {
-    videoProgress.value = x;
-  }
-};</code></pre>
+              <pre><code class="example__code">Choose option</code></pre>
             </div>
           </div>
-          <img src="" alt="error" class="skills__icon" />
+          <img src="none" alt="error" class="skills__icon" />
         </div>
       </section>
       <section class="pojects" id="projects">
@@ -85,20 +77,8 @@
             <li><h3 class="projects__vertical-slider">Vertical slider</h3></li>
             <li><h3 class="projects__indicius">Indicius</h3></li>
           </ul>
-          <div>
-            <a
-              class="project__link"
-              target="_blank"
-              href="https://rolling-scopes-school.github.io/vaniatoper-JSFEPRESCHOOL/custom-video-player/index"
-            >
-              <div
-                class="projects__image"
-                style="
-                  background: url(assets/projects/vertical-slider.png) center
-                    center no-repeat;
-                "
-              ></div>
-            </a>
+          <div class="projects__image__body">
+            <a class="projects__image" href="" target="_blank"></a>
           </div>
         </div>
       </section>
@@ -123,18 +103,23 @@
               </a>
             </div>
             <ul class="footer__contacts">
-              <a target="_blank" href="https://github.com/VaniaToper"><li class="footer__icon github"></li></a>
-              <a target="_blank" href=""><li class="footer__icon discord"></li></a>
-              <a target="_blank" href=""><li class="footer__icon gmail"></li></a>
+              <li class="footer__icon github"><a target="_blank" href="https://github.com/VaniaToper"></a></li>
+              <li class="footer__icon discord"><a target="_blank" href=""></a></li>
+              <li class="footer__icon gmail"><a target="_blank" href=""></a></li>
             </ul>
-          </div>
           </div>
         </div>
       </div>
     </footer>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script> 
+    <script>hljs.initHighlightingOnLoad();</script>
     <script type="module" src="js/header/header.js"></script>
     <script type="module" src="js/projects/projects.js"></script>
     <script type="module" src="js/skills/skills.js"></script>
   </body>
 </html>
+<!-- 
+https://vaniatoper.github.io/Indicius/Indicius
+https://rolling-scopes-school.github.io/vaniatoper-JSFEPRESCHOOL/custom-video-player/index
+https://rolling-scopes-school.github.io/vaniatoper-JSFEPRESCHOOL/vertical-slider/index
+-->

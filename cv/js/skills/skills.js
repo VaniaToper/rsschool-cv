@@ -6,92 +6,86 @@ const skillsGit = document.querySelector('.skills__git');
 const skillsIcon = document.querySelector('.skills__icon');
 const exampleCode = document.querySelector('.example__code');
 
-const skillsChange = (way, code) => {
-  exampleCode.classList.remove('skills-anim-up');
-  skillsIcon.src = way;
-  exampleCode.classList.add('skills-anim-down');
-  exampleCode.innerHTML = code;
-};
-const skillsChangeUp = () => {
-  exampleCode.classList.remove('skills-anim-down');
-  exampleCode.classList.add('skills-anim-up');
-};
-
-skillsJavaScript.addEventListener('mouseover', () => {
-  skillsChange(
-    'assets/skills/js.png',
-    `const progressUpdate = () => {
+const skills = {
+  js: `const progressUpdate = () =&gt; {
     const { currentTime, duration } = video;
     const x = (currentTime / duration) * 100;
     videoProgress.style.background = getColor(x);
     if (!videoMousedown) {
       videoProgress.value = x;
     }
-  };`
-  );
-});
-
-skillsJavaScript.addEventListener('mouseout', () => {
-  console.log('bro');
-  exampleCode.classList.remove('skills-anim-down');
-  exampleCode.classList.add('skills-anim-up');
-});
-
-skillsHtml.addEventListener('mouseover', () => {
-  skillsChange(
-    'assets/skills/html.png',
-    `&lt;ul class="skills__list"&gt;
+  };`,
+  html: `&lt;ul class="skills__list"&gt;
   &lt;li&gt;&lt;h3 class="skills__js"&gt;JavaScript&lt;/h3&gt;&lt;/li&gt;
   &lt;li&gt;&lt;h3 class="skills__html"&gt;HTML&lt;/h3&gt;&lt;/li&gt;
   &lt;li&gt;&lt;h3 class="skills__css"&gt;CSS&lt;/h3&gt;&lt;/li&gt;
   &lt;li&gt;&lt;h3 class="skills__scss"&gt;SCSS&lt;/h3&gt;&lt;/li&gt;
   &lt;li&gt;&lt;h3 class="skills__git"&gt;Git&lt;/h3&gt;&lt;/li&gt;
-&lt;/ul&gt;`
-  );
-});
-
-skillsHtml.addEventListener('mouseout', () => {
-  console.log('bro');
-  exampleCode.classList.remove('skills-anim-down');
-  exampleCode.classList.add('skills-anim-up');
-});
-
-skillsCss.addEventListener('mouseover', () => {
-  skillsChange(
-    'assets/skills/css.png',
-    `.booking .tickets-type__list {
-  max-height: 0;
-  width: 100%;
-  overflow: hidden;
-  -webkit-transition: max-height 0.2s ease-out;
-  transition: max-height 0.2s ease-out;
-}`
-  );
-});
-
-skillsCss.addEventListener('mouseout', () => {
-  console.log('bro');
-  exampleCode.classList.remove('skills-anim-down');
-  exampleCode.classList.add('skills-anim-up');
-});
-
-skillsScss.addEventListener('mouseover', () => {
-  skillsChange(
-    'assets/skills/scss.png',
-    `@import "../js/projects/projects.scss";
+&lt;/ul&gt;`,
+  css: `.booking .tickets-type__list {
+    max-height: 0;
+    width: 100%;
+    overflow: hidden;
+    -webkit-transition: max-height 0.2s ease-out;
+    transition: max-height 0.2s ease-out;
+  }`,
+  scss: `@import "../js/projects/projects.scss";
 @import "footer/footer.scss";
 body {
   overflow-x: hidden;
   background: $darkWhite;
   font-family: Poppins;
-}`
-  );
+}`,
+}
+
+
+const skillsChangeOpen = (way, code) => {
+  exampleCode.classList.remove('skills-anim-close');
+  skillsIcon.src = way;
+  exampleCode.classList.add('skills-anim-open');
+  exampleCode.innerHTML = code;
+};
+const skillsChangeClose = () => {
+  exampleCode.classList.remove('skills-anim-open');
+  exampleCode.classList.add('skills-anim-close');
+};
+
+skillsJavaScript.addEventListener('mouseover', () => {
+  console.log(exampleCode.innerHTML);
+  if (exampleCode.innerHTML != skills.js) {
+    skillsChangeClose();
+    setTimeout(() => {
+      skillsChangeOpen('assets/skills/js.png', skills.js);
+    }, 300);
+  }
 });
 
-skillsScss.addEventListener('mouseout', () => {
-  console.log('bro');
-  exampleCode.classList.remove('skills-anim-down');
-  exampleCode.classList.add('skills-anim-up');
+skillsHtml.addEventListener('mouseover', () => {
+  if (exampleCode.innerHTML != skills.html) {
+    skillsChangeClose();
+    setTimeout(() => {
+      skillsChangeOpen('assets/skills/html.png', skills.html);
+    }, 300);
+  }
+});
+
+skillsCss.addEventListener('mouseover', () => {
+  if (exampleCode.innerHTML != skills.css) {
+    skillsChangeClose();
+    setTimeout(() => {
+      skillsChangeOpen('assets/skills/css.png', skills.css);
+    }, 300);
+  }
+
+});
+
+skillsScss.addEventListener('mouseover', () => {
+  if (exampleCode.innerHTML != skills.scss) {
+    skillsChangeClose();
+    setTimeout(() => {
+      skillsChangeOpen('assets/skills/scss.png', skills.scss);
+    }, 300);
+  }
 });
 
 skillsGit.addEventListener('mouseover', () => {

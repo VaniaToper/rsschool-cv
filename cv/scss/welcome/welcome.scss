@@ -3,7 +3,8 @@
   &__content {
     height: 400px;
     width: 40%;
-    margin-top: 300px;
+    margin-top: 350px;
+    margin-bottom: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -21,6 +22,7 @@
     color: black;
   }
   &__button {
+    @include center;
     width: 500px;
     height: 70px;
     background: $blue;
@@ -28,8 +30,8 @@
     box-shadow: $shadowBlue;
     font-weight: 500;
     font-size: 31px;
-    color: white;
     transition: background 0.3s, color 0.3s;
+    color: white;
     &:hover {
       background: $darkWhite;
       border: 2px solid $blue;
