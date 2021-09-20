@@ -5,9 +5,6 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    h3 {
-      font-size: 40px;
-    }
   }
   &__link {
     width: 100%;
@@ -15,19 +12,17 @@
   &__image {
     height: 100%;
     display: block;
-    background-position: center center;
-    background-size: 100% 100%;
+    background-size: 1500px 700px;
     transition: box-shadow 0.2s;
     cursor: pointer;
     &:hover {
-      box-shadow: inset 0px 0px 100px 3px #00649C;
+      box-shadow: inset 0px 0px 100px 3px #00649c;
     }
     &__body {
       margin-top: 50px;
       width: 100%;
       height: 700px;
     }
-
   }
 }
 
@@ -55,3 +50,8 @@
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .projects__image__body{
+    height: 450px;
+  }
+}

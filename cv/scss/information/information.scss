@@ -1,8 +1,9 @@
 .information {
   &__text {
-    margin-left: 100px;
+    margin-left: 4%;
     font-style: italic;
-    font-size: 25px;
+    @include adaptive-font(25, 18);
+    @include adaptive-line-height(35,23);
     line-height: 44px;
   }
   &__quotes {

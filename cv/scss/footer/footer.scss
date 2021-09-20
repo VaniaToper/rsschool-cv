@@ -82,3 +82,42 @@
     justify-content: space-around;
   }
 }
+
+@media screen and (max-width: 1400px){
+  .footer{
+    &__body{
+      width: 65%;
+    }
+  }
+}
+@media screen and (max-width: 1000px){
+  .footer{
+    &__body{
+      width: 65%;
+    }
+    nav{
+      width: 40%;
+    }
+    &__info{
+      width: 60%;
+    }
+  }
+}
+@media screen and (max-width: 700px){
+  .footer{
+    &__content{
+      flex-direction: column;
+      gap: 25px;
+    }
+    &__body{
+      width: 65%;
+    }
+    nav{
+      width: 40%;
+    }
+    &__info{
+      gap: 15px;
+      width: 100%;
+    }
+  }
+}

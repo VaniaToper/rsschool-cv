@@ -4,17 +4,20 @@
     <meta charset="UTF-8" />
     <title>CV</title>
     <link rel="stylesheet" href="css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet"
     href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">  </head>
   <body>
     <header class="header">
-      <nav>
-        <div class="header__burger"></div>
-        <ul class="header__nav">
-          <li><a class="header__link" href="#welcome">Welcome</a></li>
-          <li><a class="header__link" href="#information">Information</a></li>
-          <li><a class="header__link" href="#skills">Skills</a></li>
-          <li><a class="header__link" href="#projects">Projects</a></li>
+      <div class="header__burger">
+        <span></span>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li><a class="header__link welcome" href="#welcome">Welcome</a></li>
+          <li><a class="header__link information" href="#information">Information</a></li>
+          <li><a class="header__link skills" href="#skills">Skills</a></li>
+          <li><a class="header__link projects" href="#projects">Projects</a></li>
         </ul>
       </nav>
     </header>
@@ -73,8 +76,8 @@
           <h2 class="projects__title">Projects</h2>
           <ul class="projects__list">
             <li><h3 class="projects__museum">Museum</h3></li>
-            <li><h3 class="projects__video-player">Video player</h3></li>
-            <li><h3 class="projects__vertical-slider">Vertical slider</h3></li>
+            <li><h3 class="projects__video-player">Player</h3></li>
+            <li><h3 class="projects__vertical-slider">Slider</h3></li>
             <li><h3 class="projects__indicius">Indicius</h3></li>
           </ul>
           <div class="projects__image__body">

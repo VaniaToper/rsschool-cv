@@ -1,7 +1,5 @@
 .skills {
   position: relative;
-  height: 550px;
-  margin-bottom: 300px;
   &__content {
     display: flex;
     flex-direction: row;
@@ -30,15 +28,15 @@
       background: grey;
     }
     pre{
-      height: 470px;
+      height: 500px;
     }
     &__code {
       overflow-y: hidden;
       height: 100%;
-      padding: 0;
+      padding: 2%;
       background: black;
-      @include adaptive-font(24, 8);
-      
+      @include adaptive-font(24, 10);
+      @include adaptive-line-height(45, 15);
       color: white;
     }
   }
@@ -52,21 +50,56 @@
 
 @keyframes codeExampleOpen {
   0% {
-    padding: 0 0 0 25px;
+    padding: 0 0 0 2%;
     height: 0;
   }
   100% {
-    padding: 10px 0 25px 25px;
+    padding: 10px 0 25px 2%;
     height: 100%;
   }
 }
 @keyframes codeExampleClose {
   0% {
-    padding: 10px 0 25px 25px;
+    padding: 10px 0 25px 2%;
     height: 100%;
   }
   100% {
-    padding: 0 0 0 25px;
+    padding: 0 0 0 2%;
     height: 0;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .skills{
+    &__content{
+      flex-direction: column;
+      gap: 15px;
+    }
+    &__list{
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 5px;
+      width: 100%;
+      height: auto;
+    }
+    .example{
+      width: 100%;
+      pre{
+        height: 300px;
+      }
+
+    }
+  }
+}
+@media screen and (max-width: 600px){
+  .skills{
+    .example{
+      pre{
+        height: 200px;
+      }
+      &__bar{
+        height: 35px;
+      }
+    }
   }
 }
