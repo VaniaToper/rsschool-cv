@@ -7,34 +7,34 @@ const skillsIcon = document.querySelector('.skills__icon');
 const exampleCode = document.querySelector('.example__code');
 
 const skills = {
-  js: `const progressUpdate = () =&gt; {
-    const { currentTime, duration } = video;
-    const x = (currentTime / duration) * 100;
-    videoProgress.style.background = getColor(x);
-    if (!videoMousedown) {
+  js: `<span style="color: #F85C50">const</span> progressUpdate = () =&gt; {
+    <span style="color: #F85C50">const</span> { currentTime, duration } = video;
+    <span style="color: #F85C50">const</span> x = (currentTime / duration) * 100;
+    videoProgress.<span style="color: #64C7FF">style</span>.<span style="color: #64C7FF">background</span> = getColor(x);
+    <span style="color: #A7E541">if</span> (!videoMousedown) {
       videoProgress.value = x;
     }
   };`,
-  html: `&lt;ul class="skills__list"&gt;
-  &lt;li&gt;&lt;h3 class="skills__js"&gt;JavaScript&lt;/h3&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;h3 class="skills__html"&gt;HTML&lt;/h3&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;h3 class="skills__css"&gt;CSS&lt;/h3&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;h3 class="skills__scss"&gt;SCSS&lt;/h3&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;h3 class="skills__git"&gt;Git&lt;/h3&gt;&lt;/li&gt;
+  html: `&lt;ul <span style="color: #F85C50">class</span>="<span style="color: #B5FBDD">skills__list</span>"&gt;
+  &lt;li&gt;&lt;h3 <span style="color: #F85C50">class</span>="<span style="color: #B5FBDD">skills__js</span>"&gt;JavaScript&lt;/h3&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;h3 <span style="color: #F85C50">class</span>="<span style="color: #B5FBDD">skills__html</span>"&gt;HTML&lt;/h3&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;h3 <span style="color: #F85C50">class</span>="<span style="color: #B5FBDD">skills__css</span>"&gt;CSS&lt;/h3&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;h3 <span style="color: #F85C50">class</span>="<span style="color: #B5FBDD">skills__scss</span>"&gt;SCSS&lt;/h3&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;h3 <span style="color: #F85C50">class</span>="<span style="color: #B5FBDD">skills__git</span>"&gt;Git&lt;/h3&gt;&lt;/li&gt;
 &lt;/ul&gt;`,
-  css: `.booking .tickets-type__list {
-    max-height: 0;
-    width: 100%;
-    overflow: hidden;
-    -webkit-transition: max-height 0.2s ease-out;
-    transition: max-height 0.2s ease-out;
+  css: `<span style="color: #F85C50">.booking .tickets-type__list</span> {
+    <span style="color: #B5FBDD">max-height</span>: 0;
+    <span style="color: #B5FBDD">width</span>: 100%;
+    <span style="color: #B5FBDD">overflow</span>: hidden;
+    <span style="color: #B5FBDD">-webkit-transition</span>: max-height 0.2s ease-out;
+    <span style="color: #B5FBDD">transition</span>: max-height 0.2s ease-out;
   }`,
-  scss: `@import "../js/projects/projects.scss";
-@import "footer/footer.scss";
-body {
-  overflow-x: hidden;
-  background: $darkWhite;
-  font-family: Poppins;
+  scss: `<span style="color: #64C7FF">@import</span> "../js/projects/projects.scss";
+  <span style="color: #64C7FF">@import</span> "footer/footer.scss";
+  <span style="color: #F85C50">body</span> {
+    <span style="color: #B5FBDD">overflow-x</span>: hidden;
+    <span style="color: #B5FBDD">background</span>: $darkWhite;
+    <span style="color: #B5FBDD">font-family</span>: Poppins;
 }`,
 }
 
