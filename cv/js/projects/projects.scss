@@ -10,9 +10,9 @@
     width: 100%;
   }
   &__image {
-    height: 100%;
+    width: 100%;
     display: block;
-    background-size: 1500px 700px;
+    object-fit: cover;
     transition: box-shadow 0.2s;
     cursor: pointer;
     &:hover {
@@ -27,7 +27,7 @@
 }
 
 .projects-anim-open {
-  animation: projectsOpen 1s forwards;
+  animation: projectsOpen 0.3s forwards;
 }
 .projects-anim-close {
   animation: projectsClose 0.3s forwards;

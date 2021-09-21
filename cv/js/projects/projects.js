@@ -5,12 +5,13 @@ const projectsVerticalSlider = document.querySelector(
 );
 const projectsIndicius = document.querySelector('.projects__indicius');
 const projectsImage = document.querySelector('.projects__image');
+const projectsURL = document.querySelector('.projects__links')
 
 const projects = {
-  museum: 'url("assets/projects/museum.png") no-repeat',
-  videoPlayer: 'url("assets/projects/video-player.png") no-repeat',
-  verticalSlider: 'url("assets/projects/vertical-slider.png") no-repeat',
-  indicius: 'url("assets/projects/indicius.png") no-repeat',
+  museum: 'assets/projects/museum.png',
+  videoPlayer: 'assets/projects/video-player.png',
+  verticalSlider: 'assets/projects/vertical-slider.png',
+  indicius: 'assets/projects/indicius.png',
 };
 
 const projectsLinks = {
@@ -24,12 +25,12 @@ const projectsLinks = {
 };
 
 const projectsChangeOpen = (
-  way = 'url("assets/projects/museum.png") no-repeat',
+  way = 'assets/projects/museum.png',
   link = 'https://rolling-scopes-school.github.io/vaniatoper-JSFEPRESCHOOL/museum/Museum'
 ) => {
   projectsImage.classList.remove('projects-anim-close');
-  projectsImage.style.background = way;
-  projectsImage.href = link;
+  projectsImage.src = way;
+  projectsURL.href = link;
   projectsImage.classList.add('projects-anim-open');
 };
 
@@ -39,7 +40,7 @@ const projectsChangeClose = () => {
 };
 
 projectsMuseum.addEventListener('mouseover', () => {
-  if (projectsImage.style.background != projects.museum) {
+  if (projectsImage.src != projects.museum) {
     projectsChangeClose();
     setTimeout(() => {
       projectsChangeOpen(projects.museum, projectsLinks.museum);
@@ -48,7 +49,7 @@ projectsMuseum.addEventListener('mouseover', () => {
 });
 
 projectsVideoPlayer.addEventListener('mouseover', () => {
-  if (projectsImage.style.background != projects.videoPlayer) {
+  if (projectsImage.src != projects.videoPlayer) {
     projectsChangeClose();
     setTimeout(() => {
       projectsChangeOpen(projects.videoPlayer, projectsLinks.videoPlayer);
@@ -57,7 +58,7 @@ projectsVideoPlayer.addEventListener('mouseover', () => {
 });
 
 projectsVerticalSlider.addEventListener('mouseover', () => {
-  if (projectsImage.style.background != projects.verticalSlider) {
+  if (projectsImage.src != projects.verticalSlider) {
     projectsChangeClose();
     setTimeout(() => {
       projectsChangeOpen(projects.verticalSlider, projectsLinks.verticalSlider);
@@ -66,7 +67,7 @@ projectsVerticalSlider.addEventListener('mouseover', () => {
 });
 
 projectsIndicius.addEventListener('mouseover', () => {
-  if (projectsImage.style.background != projects.indicius) {
+  if (projectsImage.src != projects.indicius) {
     projectsChangeClose();
     setTimeout(() => {
       projectsChangeOpen(projects.indicius, projectsLinks.indicius);
