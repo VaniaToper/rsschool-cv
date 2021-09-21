@@ -38,6 +38,7 @@ $maxWidth: 1920;
 
 
 .wrapper{
+  max-width: 100vw;
   min-height: 100%;
   display: flex;
   flex-direction: column;
