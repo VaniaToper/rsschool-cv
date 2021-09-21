@@ -6,17 +6,15 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  &__link {
-    width: 100%;
-  }
+
   &__image {
     width: 100%;
-    display: block;
+    height: 0;
     object-fit: cover;
-    transition: box-shadow 0.2s;
     cursor: pointer;
+    transition: opacity 0.2s;
     &:hover {
-      box-shadow: inset 0px 0px 100px 3px #00649c;
+      opacity: 0.955;
     }
     &__body {
       margin-top: 50px;
@@ -51,7 +49,7 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .projects__image__body{
+  .projects__image__body {
     height: 450px;
   }
 }
