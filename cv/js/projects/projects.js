@@ -6,7 +6,6 @@ const projectsVerticalSlider = document.querySelector(
 const projectsIndicius = document.querySelector('.projects__indicius');
 const projectsImage = document.querySelector('.projects__image');
 const projectsURL = document.querySelector('.projects__links')
-
 const projects = {
   museum: 'assets/projects/museum.png',
   videoPlayer: 'assets/projects/video-player.png',
@@ -23,6 +22,7 @@ const projectsLinks = {
     'https://rolling-scopes-school.github.io/vaniatoper-JSFEPRESCHOOL/vertical-slider/index',
   indicius: 'https://vaniatoper.github.io/Indicius/Indicius',
 };
+console.log(projectsImage.src);
 
 const projectsChangeOpen = (
   way = 'assets/projects/museum.png',
@@ -46,6 +46,9 @@ projectsMuseum.addEventListener('mouseover', () => {
       projectsChangeOpen(projects.museum, projectsLinks.museum);
     }, 300);
   }
+  console.log(projectsImage.src, projects.museum);
+  
+
 });
 
 projectsVideoPlayer.addEventListener('mouseover', () => {
