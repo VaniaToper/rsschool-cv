@@ -1,0 +1,55 @@
+.projects {
+  &__list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__image {
+    width: 100%;
+    height: 0;
+    object-fit: cover;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    &:hover {
+      opacity: 0.955;
+    }
+    &__body {
+      margin-top: 50px;
+      width: 100%;
+      height: 700px;
+    }
+  }
+}
+
+.projects-anim-open {
+  animation: projectsOpen 0.3s forwards;
+}
+.projects-anim-close {
+  animation: projectsClose 0.3s forwards;
+}
+
+@keyframes projectsOpen {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes projectsClose {
+  0% {
+    height: 100%;
+  }
+  100% {
+    height: 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .projects__image__body {
+    height: 450px;
+  }
+}

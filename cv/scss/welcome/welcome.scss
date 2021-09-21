@@ -1,0 +1,87 @@
+.welcome {
+  position: relative;
+  &__content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  &__items{
+    margin-top: 17%;
+    margin-bottom: 12%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+  }
+  &__title {
+    margin-bottom: 25px;
+    font-weight: bold;
+    @include adaptive-font(85, 45);
+    @include adaptive-line-height(100, 60);
+    color: $blue;
+  }
+  &__subtitle {
+    font-weight: 500;
+    @include adaptive-font(41, 24);
+    @include adaptive-line-height(65, 40);
+    color: black;
+  }
+  &__button {
+    @include center;
+    width: 500px;
+    height: 70px;
+    background: $blue;
+    border-radius: 3px;
+    box-shadow: $shadowBlue;
+    font-weight: 500;
+    @include adaptive-font(31, 24);
+    transition: background 0.3s, color 0.3s;
+    color: white;
+    &:hover {
+      background: $darkWhite;
+      border: 2px solid $blue;
+      color: $blue;
+    }
+  }
+  &__avatar{
+    height: 100%;
+  }
+}
+@media screen and (max-width: 1300px){
+  .welcome{
+    &__items{
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+    }
+    &__content{
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px){
+  .welcome{
+    &__text{
+      gap: 5px;
+    }
+    &__content{
+      gap: 10px;
+    }
+    &__button{
+      width: 90%;
+    }
+    &__avatar{
+      height: 250px;
+      width: 250px;
+    }
+  }
+}

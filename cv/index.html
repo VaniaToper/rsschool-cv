@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CV</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+    href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__burger">
+          <span></span>
+        </div>
+        <nav class="header__nav container">
+          <ul class="header__list">
+            <li><a class="header__link welcome" href="#welcome">Welcome</a></li>
+            <li><a class="header__link information" href="#information">Information</a></li>
+            <li><a class="header__link skills" href="#skills">Skills</a></li>
+            <li><a class="header__link projects" href="#projects">Projects</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="welcome container" id="welcome">
+          <div class="welcome__body">
+            <div class="welcome__items">
+              <div class="welcome__content">
+                <div class="welcome__text">
+                  <h1 class="welcome__title">Vania<br />Hodynchuk</h1>
+                  <span class="welcome__subtitle">Front-End developer</span>
+                </div>
+                <a href="#footer" class="welcome__button">Connect with me</a>
+              </div>
+              <img class="welcome__avatar" src="assets/welcome/avatar.png" alt="error">
+            </div>
+          </div>
+        </section>
+        <section class="information container" id="information">
+          <div class="information__body">
+            <h2 class="information__title">About me</h2>
+            <div class="information__content">
+              <div class="information__quotes">&lt;span&gt;</div>
+              <aside class="information__text">
+                I’m beginner in IT sphere, but I have experience with coding on
+                SCSS and HTML. Month ago I started with JavaScript, then I want to
+                continue with React, learning new information doesn’t make me any
+                problems, when it’s interesting. I have some projects, mainly it’s
+                some webs, coding on HTML and SCSS through Prepros. And I’ve
+                passed a lot exercise on Codewars with Python. I’ve passed course
+                RS School JS / FRONT-END, studying in medium school on programmer.
+                English - B1, I have a lot of friends, who I speak English with.
+              </aside>
+              <div class="information__quotes">&lt;/span&gt;</div>
+            </div>
+          </div>
+        </section>
+        <section class="skills container" id="skills">
+          <div class="skills__body">
+            <h2 class="skills__title">Skills</h2>
+            <div class="skills__content">
+              <ul class="skills__list">
+                <li><h3 class="skills__js">JavaScript</h3></li>
+                <li><h3 class="skills__html">HTML</h3></li>
+                <li><h3 class="skills__css">CSS</h3></li>
+                <li><h3 class="skills__scss">SCSS</h3></li>
+                <li><h3 class="skills__git">Git</h3></li>
+              </ul>
+              <div class="skills__example example">
+                <div class="example__bar"></div>
+                <pre><code class="example__code">Choose option</code></pre>
+              </div>
+            </div>
+            <img src="none" alt="error" class="skills__icon" />
+          </div>
+        </section>
+        <section class="pojects container" id="projects">
+          <div class="projects__body">
+            <h2 class="projects__title">Projects</h2>
+            <ul class="projects__list">
+              <li><h3 class="projects__museum">Museum</h3></li>
+              <li><h3 class="projects__video-player">Player</h3></li>
+              <li><h3 class="projects__vertical-slider">Slider</h3></li>
+              <li><h3 class="projects__indicius">Indicius</h3></li>
+            </ul>
+            <div class="projects__image__body">
+              <a class="projects__links" href="" target="_blank"><img class="projects__image" src="none" alt="error"></a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer" id="footer">
+        <div class="footer__body container">
+          <div class="footer__title">Connect with me</div>
+          <div class="footer__content">
+            <nav>
+              <ul class="footer__nav">
+                <li><a class="footer__link" href="#welcome">Welcome</a></li>
+                <li><a class="footer__link" href="#information">Information</a></li>
+                <li><a class="footer__link" href="#skills">Skills</a></li>
+                <li><a class="footer__link" href="#projects">Projects</a></li>
+              </ul>
+            </nav>
+            <div class="footer__info">
+              <div class="footer__info__course">
+                <time>2021</time>
+                <a target="_blank" href="https://rs.school/js/">
+                  <div class="footer__icon rsschool"></div>
+                </a>
+              </div>
+              <ul class="footer__contacts">
+                <li><a target="_blank" href="https://github.com/VaniaToper"><div class="footer__icon github"></div></a></li>
+                <li><a target="_blank" href="https://discord.gg/Y2JeA8ydck"><div class="footer__icon discord"></div></a></li>
+                <li><a target="_blank" href="mailto:vanjaqwe58@gmail.com"><div class="footer__icon gmail"></div></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script> 
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script type="module" src="js/header/header.js"></script>
+    <script type="module" src="js/projects/projects.js"></script>
+    <script type="module" src="js/skills/skills.js"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+.footer {
+  padding: 25px 0;
+  width: 100%;
+  background: $blue;
+  @include center;
+  &__body {
+    width: 45%;
+  }
+  &__title {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 48px;
+    color: #ffffff;
+  }
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav {
+    width: 65%;
+  }
+  &__nav {
+    width: 100%;
+  }
+  &__link {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 33px;
+    color: #ffffff;
+  }
+  &__info {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__info__course {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  time {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 33px;
+    color: #ffffff;
+  }
+  &__icon {
+    width: 50px;
+    height: 50px;
+    transition: 0.2s;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.95;
+    }
+    &:active {
+      opacity: 0.85;
+    }
+  }
+  .rsschool {
+    width: 100px;
+    height: 50px;
+    background: url("../assets/footer/rsschool.svg") no-repeat;
+    background-size: 100px;
+  }
+  .gmail {
+    background: url("../assets/footer/gmail.png") no-repeat;
+    background-size: 50px;
+  }
+  .discord {
+    background: url("../assets/footer/discord.png") no-repeat;
+    background-size: 50px;
+  }
+  .github {
+    background: url("../assets/footer/github.png") no-repeat;
+    background-size: 50px;
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 1400px){
+  .footer{
+    &__body{
+      width: 65%;
+    }
+  }
+}
+@media screen and (max-width: 1000px){
+  .footer{
+    &__body{
+      width: 65%;
+    }
+    nav{
+      width: 40%;
+    }
+    &__info{
+      width: 60%;
+    }
+  }
+}
+@media screen and (max-width: 700px){
+  .footer{
+    &__content{
+      flex-direction: column;
+      gap: 25px;
+    }
+    &__body{
+      width: 65%;
+    }
+    nav{
+      width: 40%;
+    }
+    &__info{
+      gap: 15px;
+      width: 100%;
+    }
+  }
+}
